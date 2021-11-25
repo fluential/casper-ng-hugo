@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
+  command = "hugo --enableGitInfo -d dist -s site -v"
   publish = "dist"
 
 [context.deploy-preview]
-  command = "npm run build-preview"
+  command = "hugo --enableGitInfo -d dist -s site -v --buildDrafts --buildFuture"
