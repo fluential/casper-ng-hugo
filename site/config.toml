@@ -2,12 +2,24 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Casper Theme NG"
 theme = "casper-cms-ng"
+#theme = "hugo-theme-casper"
 disqusShortname = "spf13"
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = ""
 # Define how many posts should appear on a site
 paginate = 10
 canonifyurls = true
+
+[menu]
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  url = '/about/'
+  weight = -110
+[[menu.main]]
+  name = 'Contact'
+  url = '/contact/'
+  weight = -100
 
 [params]
   description = "this is my description"
