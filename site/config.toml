@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Casper Theme"
-theme = "hugo-theme-casper"
+title = "Casper Theme NG"
+theme = "casper-cms-ng"
 disqusShortname = "spf13"
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = ""
