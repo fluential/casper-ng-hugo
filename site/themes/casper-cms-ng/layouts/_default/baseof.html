@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
+
 {{- partial "head.html" . -}}
 
-{{/* TODO: remove dependency of closing in other partial */}}
-
-<body class="nav-closed"> {{/* closed in footer.html */}}
+<body class="nav-closed">
     {{- partial "navigation.html" . -}}
-    {{/* TODO: remove dependency of closing in other partial */}}
-    <div class="site-wrapper">{{/* closed in footer.html */}}
-        {{ $baseurl := .Site.BaseURL }}
+
+    <div class="site-wrapper">
         {{- partial "header.html" . -}}
-        <div id="content">
-            {{- block "main" . }}{{- end }}
-        </div>
+        {{ block "main" . }}{{ end }}
         {{- partial "footer.html" . -}}
+    </div>
+</body>
 
 </html>
