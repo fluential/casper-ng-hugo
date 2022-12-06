@@ -1,6 +1,9 @@
-# Victor Hugo CMS Template
+# Victor Hugo CMS Template NG
+
+A working, clean version of the original template that works under most recent version of Hugo. Removed bloat and simplified.
+
 <!-- Markdown snippet -->
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/bdougie/casper-cms-template)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/fluential/casper-cms-template-ng)
 
 ![casper theme image](https://s3-us-west-1.amazonaws.com/publis-brian-images/casper.jpg)
 
@@ -17,17 +20,15 @@ Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/overview
 Clone this repository and run:
 
 ```bash
-npm install
-npm start
+hugo server --buildDrafts --debug
 ```
 
-Then visit http://localhost:3000/ - BrowserSync will automatically reload CSS or
-refresh the page when stylesheets or content changes.
+Then visit http://localhost:1313/
 
-To build your static output to the `/dist` folder, use:
+To build your static output to the `public` folder, use:
 
 ```bash
-npm run build
+hugo --gc
 ```
 
 ## Structure

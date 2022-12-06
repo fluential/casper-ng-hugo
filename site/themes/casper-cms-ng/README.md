@@ -1,10 +1,18 @@
-# CASPER theme for hugo modified
+# CASPER CMD NG
+## Hugo version of Casper theme for Ghost
 
-This is a modified version of Casper theme.
+This is continuation of the work from https://github.com/bdougie/casper-cms-template
+Provides cleaned up version supporting latest version of Hugo in native way.
+
+## New Features:
+* Mermaid graphs (see diagrams page for example)
 
 Casper is a single-column theme for [Hugo](http://gohugo.io/).
 Ported from [Casper theme for Ghost ](https://github.com/TryGhost/Casper)
 
+Demo: https://casper-cms-ng.netlify.app/
+
+Original author:
 blog demo : http://vjeantet.fr
 blog source : https://github.com/vjeantet/vjeantet.fr
 
@@ -12,6 +20,7 @@ blog source : https://github.com/vjeantet/vjeantet.fr
 
 ## Features
 
+* Mermaid graphs (see diagrams page for example)
 * Google Analytics (optional)
 * Disqus ( can disable comments by content)
 * Share buttons on Facebook, Twitter, Google (can disable share by content)
@@ -30,8 +39,7 @@ blog source : https://github.com/vjeantet/vjeantet.fr
 ## Installing this theme
 
     mkdir themes
-    cd themes
-    git clone https://github.com/vjeantet/hugo-theme-casper casper
+    git submodule add https://github.com/fluential/casper-cms-template-ng themes/casper
 
 ## Build your website with this theme
 

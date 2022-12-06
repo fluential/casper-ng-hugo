@@ -4,7 +4,7 @@
 
     {{ partial "twitter_card.html" . }}
 
-    <meta property="og:title" content="{{ if ne .URL " /" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
+    <meta property="og:title" content="{{ if ne .Permalink " /" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
 
@@ -21,7 +21,7 @@
     {{ end }}
 
     <title>
-        {{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
+        {{ if ne .Permalink "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
     </title>
 
     <meta name="description" content="{{ .Site.Params.description }}" />
@@ -34,14 +34,16 @@
 
     <link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}css/screen.css" />
     <link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}css/nav.css" />
+
+    {{ if .Site.Params.googleFonts}}
     <link rel="stylesheet" type="text/css"
         href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
-
+    {{ end }}
 
     {{ if .Site.Params.RSSLink}}
     <link href="{{.Site.Params.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{else}}
-    {{ if ne .URL "/" }}
+    {{ if ne .Permalink "/" }}
     <link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
     {{if .IsNode}}
@@ -49,7 +51,7 @@
         &middot; {{ end }}{{ .Site.Title }}" />
     {{end}}
     {{end}}
-    {{.Hugo.Generator}}
+    {{ hugo.Generator}}
 
     <link rel="canonical" href="{{ .Permalink }}" />
 
@@ -73,4 +75,13 @@
     {{ if .Site.Params.customHeaderPartial }}
     {{ partial .Site.Params.customHeaderPartial . }}
     {{ end }}
+
+    {{- if .Content }}
+    {{ if .Page.Store.Get "hasMermaid" }}
+      <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <script>
+        mermaid.initialize({ startOnLoad: true });
+      </script>
+    {{ end }}
+    {{- end }}
 </head>

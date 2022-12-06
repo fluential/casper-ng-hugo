@@ -1,17 +1,18 @@
-name = "Casper CMS ng"
-license = "MIT"
-licenselink = "https://github.com/fluential/casper-cms-template/tree/fix-ng/LICENSE.md"
-description = "Casper theme modified"
-homepage = "#"
-tags = ["blog"]
-features = ["disqus", "google analytics","share"]
-min_version=0.14
+name = "Casper CMS NG"
+license = "BSD 3-clause"
+licenselink = "https://github.com/fluential/casper-cms-ng/blob/master/LICENSE.md"
+description = "Casper CMS NG - Port of Casper theme for Ghost. Cleaned and simplied. Supports latest Hugo in most native way"
+homepage = "https://github.com/fluential/casper-cms-ng"
+tags = ["blog", "light", "minimal", "simple", "personal" ,"responsive", "portfolio"]
+features = ["mermaid", "optional google fonts", "syntax highlighting", "disqus", "rss", "google analytics", "share"]
+min_version=0.95
+demosite= "https://casper-cms-ng.netlify.app"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "fluential"
+  homepage = "https://github.com/fluential"
 
 [original]
-  name = "Casper"
-  homepage = "https://github.com/TryGhost/Casper"
-  repo = "https://github.com/TryGhost/Casper"
+  name = "Casper CMS"
+  homepage = "https://github.com/bdougie/casper-cms-template"
+  repo = "https://github.com/bdougie/casper-cms-template"
