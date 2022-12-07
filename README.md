@@ -1,5 +1,43 @@
 # Victor Hugo CMS Template NG
 
+# CASPER CMD NG
+## Hugo version of Casper theme for Ghost
+
+This is continuation of the work from https://github.com/bdougie/casper-cms-template
+Provides cleaned up version supporting latest version of Hugo in native way.
+
+## New Features:
+* Mermaid graphs (see diagrams page for example)
+
+Casper is a single-column theme for [Hugo](http://gohugo.io/).
+Ported from [Casper theme for Ghost ](https://github.com/TryGhost/Casper)
+
+Demo: https://casper-cms-ng.netlify.app/
+
+Original author:
+blog demo : http://vjeantet.fr
+blog source : https://github.com/vjeantet/vjeantet.fr
+
+![Hugo Casper Theme screenshot](https://raw.githubusercontent.com/vjeantet/hugo-theme-casper/master/images/screen.png)
+
+## Features
+
+* Mermaid graphs (see diagrams page for example)
+* Google Analytics (optional)
+* Disqus ( can disable comments by content)
+* Share buttons on Facebook, Twitter, Google (can disable share by content)
+* Big cover image (optional)
+* Custom cover by content (optional)
+* Tagging
+* Pagination
+* Menu
+
+# Theme usage and asumptions
+* All blog posts are in the ```post``` folder (```content/post```)
+* The homepage displays a paginated list of contents from the post Section (other contents may be added to main menu, see bellow)
+
+# Installation
+
 A working, clean version of the original template that works under most recent version of Hugo. Removed bloat and simplified.
 
 <!-- Markdown snippet -->
@@ -9,13 +47,8 @@ A working, clean version of the original template that works under most recent v
 
 **A [Hugo](http://gohugo.io/) boilerplate for creating truly epic websites**
 
-This is a boilerplate for using Hugo as a static site generator and Gulp + Weback as your
-asset pipeline.
-
-It's setup to use post-css and babel for CSS and JavaScript.
-
 ## Usage
-Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/overview/installing/) installed. If you need to install hugo, run:
+Make sure that you have the latest [Hugo](https://gohugo.io/overview/installing/) installed.
 
 Clone this repository and run:
 

@@ -39,7 +39,7 @@ blog source : https://github.com/vjeantet/vjeantet.fr
 ## Installing this theme
 
     mkdir themes
-    git submodule add https://github.com/fluential/casper-cms-template-ng themes/casper
+    git submodule add https://github.com/fluential/casper-ng-hugo themes/casper
 
 ## Build your website with this theme
 
