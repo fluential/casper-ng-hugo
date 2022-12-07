@@ -34,7 +34,11 @@
               <h1 class="page-title">{{.Title}}</h1>
               <h2 class="page-description">
                 {{if .Params.description}}
-                {{.Params.description}}
+                  {{.Params.description}}
+                {{else}}
+                {{if .Site.Params.description}}
+                  {{.Site.Params.description}}
+                {{end}}
                 {{end}}
               </h2>
             </div>

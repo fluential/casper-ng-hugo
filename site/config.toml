@@ -1,8 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Casper Theme NG"
-theme = "casper-cms-ng"
-#theme = "hugo-theme-casper"
+title = "Casper NG"
+theme = "casper-ng-hugo"
 disqusShortname = "demo"
 # Define how many posts should appear on a site
 paginate = 10
@@ -20,7 +19,7 @@ canonifyurls = true
   weight = -100
 
 [params]
-  description = "this is my description"
+  description = "Hugo version of Casper theme for Ghost."
   cover = "images/cover.jpg"
   author = "Valère JEANTET"
   authorlocation = "Paris, France"
@@ -28,7 +27,7 @@ canonifyurls = true
   bio= "my bio"
   logo = "images/logo.png"
   #googleAnalyticsUserID = "UA-79101-12"
-  #googleFonts = true
+  googleFonts = true
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   RSSLink = "http://feeds.feedburner.com/..."
   githubName = "casper-theme"
