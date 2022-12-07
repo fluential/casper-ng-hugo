@@ -1,7 +1,5 @@
 # Victor Hugo CMS Template NG
-
-# CASPER CMD NG
-## Hugo version of Casper theme for Ghost
+## Casper CMS NG - Hugo version of Casper theme for Ghost
 
 This is continuation of the work from https://github.com/bdougie/casper-cms-template
 Provides cleaned up version supporting latest version of Hugo in native way.
